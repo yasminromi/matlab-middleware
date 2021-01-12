@@ -16,12 +16,26 @@ public class Main {
 	
 		try {
 			
+			System.out.print("0 " + args[0]);
+			System.out.print("1 " + Double.parseDouble(args[1]));
+			System.out.print("2 " + Double.parseDouble(args[2]));
+			System.out.print("3 " + args[3]);
+			System.out.print("4 " + args[4]);
+			System.out.print("5 " + args[5]);
+			System.out.print("6 " + args[6]);
+			System.out.print("7 " + args[7]);
+			System.out.print("8 " + Boolean.parseBoolean(args[8]));
+			System.out.print("9 " + Boolean.parseBoolean(args[9]));
+			System.out.print("10 " + args[10]);
+			
+			
 			populate(args[0], Double.parseDouble(args[1]), Double.parseDouble(args[2]), args[3], args[4], args[5], args[6], args[7], Boolean.parseBoolean(args[8]), Boolean.parseBoolean(args[9]), args[10]);
 			
 			callMatlab();
 			
 		} catch (Exception e) {
 			System.out.print("Erro " + e.getMessage());
+			System.out.print("Erro " + e.getStackTrace().toString());
 		}
 	}
 	
